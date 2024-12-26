@@ -1,0 +1,92 @@
+body{
+  font-family: Helvetica, sans-serif;
+}
+
+body, header, footer {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color:white;
+  color: black;
+  padding: 5% 20px; /* Side padding */
+  height: 30vh;
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+}
+
+section {
+  margin: auto 15%;
+}
+
+h1 {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: normal;
+  font-size: 3em;
+  margin: 0; 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30%;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2.5em;
+  transition: color 0.3s ease;
+  color: black;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+a:hover {
+  color: rgb(105, 105, 185);
+}
+
+/* Divider styles */
+hr.separator1 {
+  border: 0;
+  border-top: 2px solid black;
+  margin: 20px auto;
+  width: 80%; 
+}
+
+hr.separator2 {
+  border: 0;
+  border-top: 1px dashed black;
+  margin: 20px 0;
+  width: 100%;
+}
+
+/* Footer styling */
+footer {
+  background-color: linear-gradient(white, rgb(105, 105, 185));
+  font-family: Helvetica, sans-serif;
+  color: black;
+  margin: auto 15%;
+}
+
+.contacts {
+  height: 20px;
+  width: 20pxs;
+}
+.contacts-logo {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+
+
