@@ -79,14 +79,47 @@ footer {
 }
 
 .contacts {
-  height: 20px;
-  width: 20pxs;
+  display: flex;
+  gap: 20px;
 }
+
+.contacts a {
+  text-decoration: none;
+}
+
 .contacts-logo {
-  display: inline-block;
-  height: 20px;
-  width: 20px;
+  width: 50px;
+  height: 50px; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Bluesky:hover path {
+  fill: rgb(105, 105, 185);
+}
+
+.Email:hover path {
+  stroke: rgb(105, 105, 185);
 }
 
 
+.blogpost {
+margin: 10% 0;
+background-color: rgb(234, 234, 234);
+border-radius: 25px;
+height: 140px;
+width: 100%;
 
+
+}
+
+.title {
+font-family: "Lexend Deca", sans-serif;
+color: black;
+}
+
+.categorization {
+font-family: "Lexend Deca", sans-serif;
+font-weight: normal;
+color: rgba(105, 105, 185);
+}
