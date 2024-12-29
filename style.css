@@ -1,3 +1,7 @@
+* {
+  background-color: black;
+}
+
 body{
   font-family: Helvetica, sans-serif;
 }
@@ -8,8 +12,7 @@ body, header, footer {
 }
 
 header {
-  background-color:white;
-  color: black;
+  color: white;
   padding: 5% 20px; /* Side padding */
   height: 30vh;
   display: flex; /* Flexbox for layout */
@@ -26,7 +29,16 @@ h1 {
   font-family: "Lexend Deca", sans-serif;
   font-weight: normal;
   font-size: 3em;
-  margin: 0; 
+  margin: 0;
+  color: white; 
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
 }
 
 ul {
@@ -43,11 +55,15 @@ li {
   display: inline-block;
 }
 
+p {
+  color: white;
+}
+
 a {
   text-decoration: none;
   font-size: 2.5em;
   transition: color 0.3s ease;
-  color: black;
+  color: white;
   font-family: "Lexend Deca", sans-serif;
 }
 
@@ -58,23 +74,23 @@ a:hover {
 /* Divider styles */
 hr.separator1 {
   border: 0;
-  border-top: 2px solid black;
+  border-top: 2px solid white;
   margin: 20px auto;
   width: 80%; 
 }
 
 hr.separator2 {
   border: 0;
-  border-top: 1px dashed black;
+  border-top: 1px dashed white;
   margin: 20px 0;
   width: 100%;
 }
 
 /* Footer styling */
 footer {
-  background-color: linear-gradient(white, rgb(105, 105, 185));
+  background-color: black;
   font-family: Helvetica, sans-serif;
-  color: black;
+  color: white;
   margin: auto 15%;
 }
 
@@ -91,6 +107,9 @@ footer {
   width: 50px;
   height: 50px; 
   cursor: pointer;
+}
+
+.contacts-logo path {
   transition: all 0.3s ease;
 }
 
@@ -115,7 +134,7 @@ width: 100%;
 
 .title {
 font-family: "Lexend Deca", sans-serif;
-color: black;
+color: white;
 }
 
 .categorization {
