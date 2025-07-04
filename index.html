@@ -1,66 +1,116 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tobias Broza - PhysMath Blog</title>
-    <link rel="stylesheet" href="./style.css">
-    <!-- Font -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home - Tobias Broza</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
-    <!-- Favicon -->
-     <link rel="icon" href="static/dove1_16.png" sizes="16x16" type="image/png">
-     <link rel="icon" href="static/dove1_32.png" sizes="32x32" type="image/png">
-     <link rel="icon" href="static/dove1_180.png" sizes="180x180" type="image/png">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/dove1_16.png" sizes="16x16" type="image/png" />
+    <link rel="icon" href="static/dove1_32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="static/dove1_180.png" sizes="180x180" type="image/png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Lexend Deca', sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <!-- Header and Navigation -->
-    <header>
-      <h1>Tobias Broza</h1>
-      <h2>PhysMath & SciComm</h2>
-      <hr class="separator1">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Blog</a></li>  
-          <li><a href="about.html">About</a></li>          
-        </ul>
-      </nav>
-      <hr class="separator1">
-    </header>
-    <section>
-      <h2>
-        Here will be a brief introduction of the website.
-      </h2>
-      <p>
-        Information about me and the blog.
-      </p>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-      <h3 class="footer-text">
-        Message me:
-      </h3>
-      <div class="contacts">
+
+  <body class="bg-[#0b0b0b] text-white flex flex-col min-h-screen">
+
+  <!-- Hero section -->
+  <div class="relative h-[60vh] w-full">
+    <!-- Background image -->
+    <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('static/potm2504a.jpg');"></div>
+
+    <!-- Gradient overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0b0b0b] z-10"></div>
+
+    <!-- Header (logo + menu) -->
+<header class="absolute top-0 left-0 right-0 flex justify-between items-center px-[16.66vw] py-8 z-20">
+      <!-- Logo -->
+      <img src="static/dove1_180.png" alt="logo" class="w-16 h-16" />
+
+      <!-- Navigation menu -->
+      <nav class="flex gap-8 items-center text-white font-medium">
+        <a href="index.html" class="px-4 py-2 rounded-md font-semibold bg-white text-indigo-600">Home</a>
+        <a href="blog.html" class="px-4 py-2 rounded-md hover:bg-indigo-600 hover:text-white transition">Blog</a>
+        <a href="about.html" class="px-4 py-2 rounded-md hover:bg-indigo-600 hover:text-white transition">About</a>
+        <a href="research.html" class="px-4 py-2 rounded-md hover:bg-indigo-600 hover:text-white transition">Research</a>
+      </nav>
+
+
+      <!-- Contact Me button -->
+      <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-md transition">
+        Contact me
+      </a>
+</header>
+
+    <!-- Centered Name -->
+    <div class="absolute inset-0 flex justify-start items-center z-20 pointer-events-none px-[16.66vw]">
+      <div class="flex flex-col space-y-2 max-w-xl">
+        <h1 class="text-8xl font-bold text-white select-none">Tobiáš Broža</h1>
+        <h2 class="text-white select-none">Welcome to my website! Here you can learn more about my research and interests</h2>
+      </div>
+    </div>
+  </div>
+
+    <main class="flex-grow max-w-3xl mx-auto px-6">
+      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida lectus felis, ut blandit tortor lacinia quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut vehicula dictum iaculis. Pellentesque varius ac urna vel faucibus. Aliquam ac ultricies lectus. In hac habitasse platea dictumst. Aliquam consectetur auctor vehicula. Mauris ac facilisis nunc. In turpis urna, luctus eget placerat quis, placerat ut elit. Aenean vel finibus ex. Nullam sit amet euismod sem.
+
+          Nam nec mauris a nisi faucibus condimentum. Suspendisse sed tincidunt tortor. Morbi faucibus porttitor dolor non tincidunt. Nullam gravida id ipsum nec lobortis. Maecenas in volutpat nunc. Quisque at urna eget ipsum pellentesque ullamcorper vel eu sapien. Aenean dapibus egestas vehicula. Sed neque erat, vulputate vel ex vehicula, accumsan molestie odio. Pellentesque euismod arcu et nulla mollis lacinia. Etiam eleifend ipsum eu velit venenatis, at tempus ligula ultricies. Integer sed purus eget ante fringilla venenatis. Donec vulputate porta mauris nec maximus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed vehicula consectetur posuere. Vestibulum pharetra mauris id consectetur accumsan. Proin sem orci, iaculis at blandit commodo, scelerisque sed ex.
+
+          Etiam sed dui dolor. Mauris ligula metus, gravida nec rhoncus dignissim, fringilla non felis. Pellentesque rutrum, neque id sagittis pellentesque, nisl nisl iaculis justo, et rutrum quam lorem in felis. Nunc ultricies massa vel lorem condimentum sollicitudin. Suspendisse id scelerisque mauris. Nunc vehicula, neque id imperdiet posuere, est sem gravida lectus, at laoreet sem leo quis dui. Aliquam convallis fringilla volutpat. Suspendisse vitae metus lorem. Aenean imperdiet ut dui eget ullamcorper. Aliquam non mollis enim. Praesent diam erat, bibendum ac lectus in, mattis pellentesque dui. Mauris ornare nunc bibendum sem gravida vehicula. Etiam efficitur tempus sem at molestie. Quisque nisi quam, imperdiet non fermentum eu, suscipit nec turpis. Nam scelerisque ultrices neque, non vulputate felis feugiat luctus.
+
+          Fusce finibus viverra nunc eu euismod. Morbi metus dui, congue nec erat eget, tempor condimentum erat. Fusce vitae tellus ac orci pretium tempor. Phasellus aliquet tempus lacus, pharetra euismod enim faucibus at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla erat quam, sollicitudin quis urna id, tristique lacinia lacus. In hac habitasse platea dictumst. Vestibulum gravida magna in nibh scelerisque feugiat. Vivamus pretium lacus vel dolor scelerisque tincidunt.
+
+          Curabitur a congue augue, sed pulvinar lectus. Pellentesque dapibus sem sit amet mattis suscipit. Sed ullamcorper, ante pretium tincidunt maximus, erat nunc ullamcorper ex, eget rutrum arcu magna sit amet augue. Nullam a tellus sit amet eros cursus viverra. Phasellus justo massa, aliquet sed lectus iaculis, semper gravida libero. Quisque placerat nulla in aliquet vehicula. Donec dictum tristique ipsum. Curabitur consequat, dolor vel interdum egestas, augue nisl convallis libero, id elementum dolor metus vitae massa. Nam sit amet tellus sit amet augue scelerisque iaculis vel eu magna. Nulla scelerisque arcu sit amet interdum euismod. Nam consectetur ullamcorper risus in ultrices. Maecenas pellentesque aliquet sem non vestibulum. Integer ultricies dolor eu sem ultrices luctus. Morbi ultricies augue sit amet leo viverra, ac bibendum nulla hendrerit. Donec ex magna, commodo a massa sed, consectetur fringilla purus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+</h2>
+    </main>
+
+    <footer id="contact" class="bg-gray-800 mt-12 p-6 text-center">
+      <h3 class="text-lg mb-4 font-semibold">Message me:</h3>
+      <div class="flex justify-center gap-8 mb-6">
         <!-- Bluesky SVG -->
-        <a href="https://bsky.app/profile/tobiasbroza.bsky.social" target="_blank" aria-label="Bluesky">
-          <svg viewBox="0 0 600 530" xmlns="http://www.w3.org/2000/svg" class="Bluesky contacts-logo">
-            <path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z" fill="#ffffff"/>
-           </svg>
-        </a>
-        <!-- Email SVG -->
-        <a href="mailto:broza.tobias@gmail.com" aria-label="Email">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="Email contacts-logo">
-            <path d="M4 9.00005L10.2 13.65C11.2667 14.45 12.7333 14.45 13.8 13.65L20 9" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M3 9.17681C3 8.45047 3.39378 7.78123 4.02871 7.42849L11.0287 3.5396C11.6328 3.20402 12.3672 3.20402 12.9713 3.5396L19.9713 7.42849C20.6062 7.78123 21 8.45047 21 9.17681V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V9.17681Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+        <a href="https://bsky.app/profile/tobiasbroza.bsky.social" target="_blank" aria-label="Bluesky" class="hover:opacity-75 transition">
+          <svg viewBox="0 0 600 530" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 fill-white">
+            <path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"/>
           </svg>
         </a>
-      </div>      
-      <p>© Tobias Broza 2024</p>
+
+        <!-- Email SVG -->
+        <a href="mailto:broza.tobias@gmail.com" aria-label="Email" class="hover:opacity-75 transition">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 stroke-white">
+            <path d="M4 9.00005L10.2 13.65C11.2667 14.45 12.7333 14.45 13.8 13.65L20 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3 9.17681C3 8.45047 3.39378 7.78123 4.02871 7.42849L11.0287 3.5396C11.6328 3.20402 12.3672 3.20402 12.9713 3.5396L19.9713 7.42849C20.6062 7.78123 21 8.45047 21 9.17681V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V9.17681Z"/>
+          </svg>
+        </a>
+      </div>
+      <p class="text-gray-400 text-sm">© Tobias Broza 2024</p>
+      <footer id="contact" class="bg-gray-800 mt-12 p-6 text-center">
     </footer>
+
+    <script>
+  const btn = document.getElementById('dropdownBtn');
+  const menu = document.getElementById('dropdownMenu');
+
+  btn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  menu.classList.toggle('opacity-0');
+  menu.classList.toggle('scale-95');
+  menu.classList.toggle('pointer-events-none');
+});
+
+  window.addEventListener('click', (e) => {
+  if (!btn.contains(e.target) && !menu.contains(e.target)) {
+    menu.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
+  }
+});
+console.log("Dropdown JS loaded");
+</script>
+
   </body>
 </html>
