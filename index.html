@@ -3,17 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home - Tobias Broza</title>
+    <title>Home - Tobiáš Broža</title>
+    <meta name="description" content="Physics student currently researching exoplanets in star clusters. Explore my research interest, learn more about me or read my blog!">
+    <meta name="keywords" content="Tobiáš, Broža, Tobias, Broza, Physics, Math, Maths, Mathematics, Astronomy, Astrophysics, Exoplanet, Exoplanets, Star, Cluster">
+    <meta name="author" content="Tobiáš Broža">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tthallium.github.io/">
+    <meta property="og:title" content="Tobiáš Broža - Physics">
+    <meta property="og:description" content="Physics student currently researching exoplanets in star clusters. Explore my research interest, learn more about me or read my blog!">
+    <meta property="og:image" content="https://tthallium.github.io/static/potm2409a.jpg">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tthallium.github.io/">
+    <meta property="twitter:title" content="Tobiáš Broža - Astrophysicist & Researcher">
+    <meta property="twitter:description" content="Physics student currently researching exoplanets in star clusters. Explore my research interest, learn more about me or read my blog!">
+    <meta property="twitter:image" content="https://tthallium.github.io/static/potm2409a.jpg">
+    
+    <link rel="canonical" href="https://tthallium.github.io/">
+    
+    <link rel="preload" as="image" href="static/potm2409a.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    
     <link rel="icon" href="static/dove1_16.png" sizes="16x16" type="image/png" />
     <link rel="icon" href="static/dove1_32.png" sizes="32x32" type="image/png" />
     <link rel="icon" href="static/dove1_180.png" sizes="180x180" type="image/png" />
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       body {
         font-family: 'Lexend Deca', sans-serif;
+      }
+      
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      
+      .hero-content {
+        animation: fadeInUp 1.2s ease-out 0.3s both;
+      }
+      
+      .hero-header {
+        animation: fadeIn 1s ease-out 0.1s both;
+      }
+      
+      .hero-bg {
+        animation: fadeIn 1.5s ease-out both;
+      }
+      
+      .hero-title {
+        animation: fadeInUp 1s ease-out 0.5s both;
+      }
+      
+      .hero-subtitle {
+        animation: fadeInUp 1s ease-out 0.7s both;
       }
     </style>
   </head>
@@ -22,23 +83,24 @@
 
   <!-- Hero section -->
   <div class="relative min-h-screen sm:h-[60vh] w-full">
-    <!-- Background image -->
-    <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('static/potm2409a.jpg');"></div>
+    <!-- bg image -->
+    <div class="absolute inset-0 bg-cover bg-center z-0 hero-bg" style="background-image: url('static/potm2409a.jpg');"></div>
 
-    <!-- Gradient overlay -->
+    <!-- Gradient -->
     <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0b0b0b] z-10"></div>
 
     <!-- Header (logo + menu) -->
-    <header class="absolute top-0 left-0 right-0 flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 md:px-[16.66vw] py-4 md:py-8 z-20 gap-4">
+    <header class="absolute top-0 left-0 right-0 flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 md:px-[16.66vw] py-4 md:py-8 z-20 gap-4 hero-header">
+      
       <!-- Logo -->
-      <img src="static/dove1_180.png" alt="logo" class="w-12 h-12 sm:w-16 sm:h-16 transition duration-300 ease-in-out hover:filter hover:drop-shadow-[0_0_8px_rgba(99,102,241,0.8)]"/>
+      <img src="static/dove1_180.png" alt="Tobiáš Broža Logo" class="w-12 h-12 sm:w-16 sm:h-16 transition duration-300 ease-in-out hover:filter hover:drop-shadow-[0_0_8px_rgba(99,102,241,0.8)]"/>
 
       <!-- Navigation menu -->
       <nav class="flex flex-col sm:flex-row gap-2 sm:gap-4 md:gap-8 items-center text-white font-medium text-sm sm:text-base">
-        <a href="index.html" class="px-3 py-2 sm:px-4 sm:py-2 rounded-md font-semibold bg-white text-indigo-600 text-center min-w-[80px]">Home</a>
-        <a href="research.html" class="px-3 py-2 sm:px-4 sm:py-2 rounded-md hover:bg-indigo-600 hover:text-white transition text-center min-w-[80px]">Research</a>
-        <a href="blog.html" class="px-3 py-2 sm:px-4 sm:py-2 rounded-md hover:bg-indigo-600 hover:text-white transition text-center min-w-[80px]">Blog</a>
-        <a href="about.html" class="px-3 py-2 sm:px-4 sm:py-2 rounded-md hover:bg-indigo-600 hover:text-white transition text-center min-w-[80px]">About</a>
+        <a href="/" class="px-3 py-2 sm:px-4 sm:py-2 rounded-md font-semibold bg-white text-indigo-600 text-center min-w-[80px]">Home</a>
+        <a href="/research/" class="px-3 py-2 sm:px-4 sm:py-2 rounded-md hover:bg-indigo-600 hover:text-white transition text-center min-w-[80px]">Research</a>
+        <a href="/blog/" class="px-3 py-2 sm:px-4 sm:py-2 rounded-md hover:bg-indigo-600 hover:text-white transition text-center min-w-[80px]">Blog</a>
+        <a href="/about/" class="px-3 py-2 sm:px-4 sm:py-2 rounded-md hover:bg-indigo-600 hover:text-white transition text-center min-w-[80px]">About</a>
       </nav>
 
       <!-- Contact Me button -->
@@ -49,9 +111,9 @@
 
     <!-- Centered Name -->
     <div class="absolute inset-0 flex justify-center sm:justify-start items-center z-20 pointer-events-none px-4 sm:px-6 md:px-[16.66vw] pt-32 sm:pt-0">
-      <div class="flex flex-col space-y-2 max-w-xl text-center sm:text-left">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-white select-none leading-tight">Tobiáš Broža</h1>
-        <h2 class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-white select-none leading-relaxed">Welcome to my website! Here you can learn more about my research and interests</h2>
+      <div class="flex flex-col space-y-2 max-w-xl text-center sm:text-left hero-content">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-white select-none leading-tight hero-title">Tobiáš Broža</h1>
+        <h2 class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-white select-none leading-relaxed hero-subtitle">Welcome to my website! Here you can learn more about my research and interests</h2>
       </div>
     </div>
   </div>
@@ -78,7 +140,7 @@
 
                 <div class="flex gap-6 sm:gap-8 mb-6 items-center justify-center">
                     <!-- Bluesky -->
-                    <a href="https://bsky.app/profile/tobiasbroza.bsky.social" target="_blank" aria-label="Bluesky" class="hover:opacity-75 transition flex items-center justify-center w-10 h-10">
+                    <a href="https://bsky.app/profile/tobiasbroza.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Bluesky" class="hover:opacity-75 transition flex items-center justify-center w-10 h-10">
                         <svg viewBox="0 0 600 530" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 fill-white">
                             <path d="M135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"/>
                         </svg>
@@ -93,18 +155,18 @@
                     </a>
 
                     <!-- Instagram -->
-                    <a href="https://www.instagram.com/tobiasbroza/" aria-label="Instagram" class="hover:opacity-75 transition flex items-center justify-center w-10 h-10">
+                    <a href="https://www.instagram.com/tobiasbroza/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:opacity-75 transition flex items-center justify-center w-10 h-10">
                         <svg fill="#ffffff" width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 scale-[1.25]">
                             <path d="M20.445 5h-8.891A6.559 6.559 0 0 0 5 11.554v8.891A6.559 6.559 0 0 0 11.554 27h8.891a6.56 6.56 0 0 0 6.554-6.555v-8.891A6.557 6.557 0 0 0 20.445 5zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342h-8.891a4.341 4.341 0 0 1-4.341-4.342v-8.891a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z"/><path d="M16 10.312c-3.138 0-5.688 2.551-5.688 5.688s2.551 5.688 5.688 5.688 5.688-2.551 5.688-5.688-2.55-5.688-5.688-5.688zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95zM21.7 8.991a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z"/>
                         </svg>
                     </a> 
                 </div>
-                <a href="https://github.com/tthallium/tthallium.github.io"><h3 class="text-lg mb-4 font-extralight hover:opacity-75 transition flex items-center justify-left">© Tobiáš Broža 2025</h3></a>
+                <a href="https://github.com/tthallium/tthallium.github.io" target="_blank" rel="noopener noreferrer"><h3 class="text-lg mb-4 font-extralight hover:opacity-75 transition flex items-center justify-left">© Tobiáš Broža 2025</h3></a>
             </div>
 
             <!-- Right Column -->
             <div class="w-full md:w-1/2 flex justify-center items-center">
-                <a href="https://www.mff.cuni.cz/en" aria-label="MFF-UK" class="hover:opacity-75 transition">
+                <a href="https://www.mff.cuni.cz/en" target="_blank" rel="noopener noreferrer" aria-label="MFF-UK" class="hover:opacity-75 transition">
                     <svg version="1.1" id="svg1" width="280.63" height="122.833335" viewBox="0 0 1122.52 491.33334" xmlns="http://www.w3.org/2000/svg" class="w-48 sm:w-64 h-auto">
                         <g id="g1">
                             <path id="path1" d="m 4801.63,1246.4 c -52.03,0 -118.87,-22.61 -172.88,-56.97 -23.54,38.31 -64.81,56.97 -122.77,56.97 -52.02,0 -118.76,-22.61 -171.78,-55.98 l -26.56,46.15 H 4209.4 V 735.73 h 147.36 v 382.02 c 26.51,5.88 55.04,8.84 78.54,8.84 61.9,0 71.72,-12.78 71.72,-104.1 V 735.73 h 147.3 v 345.69 c 0,12.74 -0.98,24.54 -2.02,36.33 26.56,5.88 55.04,8.84 78.59,8.84 61.9,0 71.67,-12.78 71.67,-104.1 V 735.73 h 147.36 v 345.69 c 0,110.97 -50.11,164.98 -148.29,164.98 m 514.26,0 c -57.96,0 -140.45,-8.89 -199.34,-19.65 l 6.86,-105.1 c 56.97,4.94 113.88,8.89 165.97,8.89 76.61,0 100.15,-12.79 100.15,-88.41 v -4.89 c -33.37,2.92 -68.71,4.89 -100.15,3.9 -142.37,0 -207.18,-38.3 -207.18,-153.171 0,-97.25 60.91,-162.071 167.88,-162.071 63.88,0 115.91,23.602 158.11,60.922 l 30.41,-51.09 h 98.24 v 310.35 c 0,157.07 -53.02,200.32 -220.95,200.32 m -90.34,-356.509 c 0,38.3 19.65,58.941 71.73,59.929 21.57,0 56.91,-1.98 92.25,-3.949 V 858.5 c -24.53,-16.691 -54,-28.48 -87.42,-28.48 -51.04,0 -76.56,23.539 -76.56,59.871 m 755.74,-38.262 c -24.59,-3.938 -54,-5.867 -75.63,-5.867 -56.96,0 -65.8,10.758 -65.8,84.41 v 186.598 h 117.83 v 119.8 h -117.83 v 133.53 l -147.25,-41.22 V 893.84 c 0,-133.578 53.02,-167.942 161.96,-167.942 43.24,0 101.2,8.84 134.62,19.653 z m 369.4,469.351 c 16.73,0 39.34,-0.93 67.78,-3.89 l 6.85,98.23 c -31.39,9.77 -82.43,17.62 -131.5,17.62 -130.67,0 -174.85,-43.19 -174.85,-173.81 v -523.4 h 147.31 v 381.04 h 127.65 v 118.82 h -127.65 c 1.97,76.56 13.72,85.39 84.41,85.39 m 672.68,-84.41 h -156.14 l -100.16,-403.59 -99.17,403.59 h -155.2 l 146.31,-500.84 h 81.55 l -47.19,-162.011 h 136.54 z m 501.11,-381.039 h -252.4 l 242.62,257.289 v 123.75 h -397.77 v -119.8 h 232.75 L 7107.1,859.48 V 735.73 h 417.38 v 119.801" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(0.13333333,0,0,-0.13333333,0,491.33333)" />
