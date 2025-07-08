@@ -3,33 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Blog - Tobiáš Broža</title>
-    <meta name="description" content="Come and read my blog about space, maths and much more!">
-    <meta name="keywords" content="Tobiáš, Broža, Tobias, Broza, Physics, Math, Maths, Mathematics, Astronomy, Astrophysics, Exoplanet, Exoplanets, Star, Cluster">
+    <title>Blog Post Name - Tobiáš Broža</title>
+    <meta name="description" content="Physics student currently researching exoplanets in star clusters. Explore my research interest, learn more about me or read my blog!">
+    <meta name="keywords" content="Tobiáš, Broža, Tobias, Broza, Physics, Math, Maths, Mathematics, Astronomy, Astrophysics, Exoplanet, Exoplanets, Star, Cluster, Satellite">
     <meta name="author" content="Tobiáš Broža">
     
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tthallium.github.io/blog.html">
+    <meta property="og:url" content="https://tthallium.github.io/">
     <meta property="og:title" content="Tobiáš Broža - Physics">
-    <meta property="og:description" content="Come and read my blog about space, maths and much more!">
+    <meta property="og:description" content="Physics student currently researching exoplanets in star clusters. Explore my research interest, learn more about me or read my blog!">
     <meta property="og:image" content="https://tthallium.github.io/static/potm2409a.jpg">
     
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://tthallium.github.io/blog.html">
-    <meta property="twitter:title" content="Tobiáš Broža - Astrophysicist & Researcher">s
-    <meta property="twitter:description" content="Come and read my blog about space, maths and much more!">
+    <meta property="twitter:url" content="https://tthallium.github.io/">
+    <meta property="twitter:title" content="Tobiáš Broža - Astrophysicist & Researcher">
+    <meta property="twitter:description" content="Physics student currently researching exoplanets in star clusters. Explore my research interest, learn more about me or read my blog!">
     <meta property="twitter:image" content="https://tthallium.github.io/static/potm2409a.jpg">
     
     <link rel="canonical" href="https://tthallium.github.io/">
     
-    <link rel="preload" as="image" href="static/potm2409a.jpg">
+    <link rel="preload" as="image" href="../../static/potm2409a.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
     
-    <link rel="icon" href="static/dove1_16.png" sizes="16x16" type="image/png" />
-    <link rel="icon" href="static/dove1_32.png" sizes="32x32" type="image/png" />
-    <link rel="icon" href="static/dove1_180.png" sizes="180x180" type="image/png" />
+    <link rel="icon" href="../../static/dove1_16.png" sizes="16x16" type="image/png" />
+    <link rel="icon" href="../../static/dove1_32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="../../static/dove1_180.png" sizes="180x180" type="image/png" />
     
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -84,27 +84,32 @@
   <!-- Hero section -->
   <div class="relative min-h-screen sm:h-[60vh] w-full">
     <!-- bg image -->
-    <div class="absolute inset-0 bg-cover bg-center z-0 hero-bg" style="background-image: url('static/potm2409a.jpg');"></div>
+    <div class="absolute inset-0 bg-cover bg-center z-0 hero-bg" style="background-image: url('../../static/potm2409a.jpg');"></div>
 
     <!-- Gradient -->
     <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0b0b0b] z-10"></div>
+
+    <!-- Photo Credit -->
+    <div id="photo-credit" class="photo-credit absolute bottom-4 right-4 z-30 text-white text-xs opacity-70 bg-black bg-opacity-50 px-2 py-1 rounded backdrop-blur-sm">
+      <a href="https://esawebb.org/images/potm2409b/" class="hover:text-indigo-300 transition-colors">ESA/Webb, NASA & CSA, M. Zamani (ESA/Webb), M. G. Guarcello (INAF-OAPA) and the EWOCS team</a>
+    </div>
 
     <!-- Header (logo + menu) -->
     <header class="absolute top-0 left-0 right-0 flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 md:px-[16.66vw] py-4 md:py-8 z-20 gap-4 hero-header">
       
       <!-- Logo -->
-      <img src="static/dove1_180.png" alt="Tobiáš Broža Logo" class="w-12 h-12 sm:w-16 sm:h-16 transition duration-300 ease-in-out hover:filter hover:drop-shadow-[0_0_8px_rgba(99,102,241,0.8)]"/>
+      <img src="../../static/dove1_180.png" alt="Tobiáš Broža Logo" class="w-12 h-12 sm:w-16 sm:h-16 transition duration-300 ease-in-out hover:filter hover:drop-shadow-[0_0_8px_rgba(99,102,241,0.8)]"/>
 
       <!-- Navigation menu -->
       <nav class="flex flex-col sm:flex-row gap-2 sm:gap-4 md:gap-8 items-center text-white font-medium text-sm sm:text-base">
-        <a href="index.html" class="px-3 py-2 sm:px-4 sm:py-2 rounded-md hover:bg-indigo-600 hover:text-white transition text-center min-w-[80px]">Home</a>
-        <a href="research.html" class="px-3 py-2 sm:px-4 sm:py-2 rounded-md hover:bg-indigo-600 hover:text-white transition text-center min-w-[80px]">Research</a>
-        <a href="blog.html" class="px-3 py-2 sm:px-4 sm:py-2 rounded-md font-semibold bg-white text-indigo-600 text-center min-w-[80px]">Blog</a>
-        <a href="about.html" class="px-3 py-2 sm:px-4 sm:py-2 rounded-md hover:bg-indigo-600 hover:text-white transition text-center min-w-[80px]">About</a>
+        <a href="/" class="px-3 py-2 sm:px-4 sm:py-2 rounded-md hover:bg-indigo-600 hover:text-white transition text-center min-w-[80px] duration-300 ease-in-out hover:filter hover:drop-shadow-[0_0_8px_rgba(256,256,256,0.4)]">Home</a>
+        <a href="/research/" class="px-3 py-2 sm:px-4 sm:py-2 rounded-md hover:bg-indigo-600 hover:text-white transition text-center min-w-[80px] duration-300 ease-in-out hover:filter hover:drop-shadow-[0_0_8px_rgba(256,256,256,0.4)]">Research</a>
+        <a href="/blog/" class="px-3 py-2 sm:px-4 sm:py-2 rounded-md font-semibold bg-white text-indigo-600 text-center min-w-[80px] drop-shadow-[0_0_8px_rgba(99,102,241,0.8)]">Blog</a>
+        <a href="/about/" class="px-3 py-2 sm:px-4 sm:py-2 rounded-md hover:bg-indigo-600 hover:text-white transition text-center min-w-[80px] duration-300 ease-in-out hover:filter hover:drop-shadow-[0_0_8px_rgba(256,256,256,0.4)]">About</a>
       </nav>
 
       <!-- Contact Me button -->
-      <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-md transition text-sm sm:text-base">
+      <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-md transition text-sm sm:text-base duration-300 ease-in-out hover:filter hover:drop-shadow-[0_0_8px_rgba(256,256,256,0.4)]">
         Contact me
       </a>
     </header>
@@ -112,23 +117,16 @@
     <!-- Centered Name -->
     <div class="absolute inset-0 flex justify-center sm:justify-start items-center z-20 pointer-events-none px-4 sm:px-6 md:px-[16.66vw] pt-32 sm:pt-0">
       <div class="flex flex-col space-y-2 max-w-xl text-center sm:text-left hero-content">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-white select-none leading-tight hero-title">Blog</h1>
-        <h2 class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-white select-none leading-relaxed hero-subtitle">Here you can read about things and topics that interest me!</h2>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-white select-none leading-tight hero-title">Post Title</h1>
+        <h2 class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-white select-none leading-relaxed hero-subtitle">Hook</h2>
       </div>
     </div>
   </div>
 
-  <main class="flex-grow max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12 text-sm sm:text-base leading-relaxed">
+  <main class="flex-grow max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12 text-sm sm:text-base leading-relaxed text-justify">
     <div class="space-y-4 sm:space-y-6">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida lectus felis, ut blandit tortor lacinia quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut vehicula dictum iaculis. Pellentesque varius ac urna vel faucibus. Aliquam ac ultricies lectus. In hac habitasse platea dictumst. Aliquam consectetur auctor vehicula. Mauris ac facilisis nunc. In turpis urna, luctus eget placerat quis, placerat ut elit. Aenean vel finibus ex. Nullam sit amet euismod sem.</p>
-
-      <p>Nam nec mauris a nisi faucibus condimentum. Suspendisse sed tincidunt tortor. Morbi faucibus porttitor dolor non tincidunt. Nullam gravida id ipsum nec lobortis. Maecenas in volutpat nunc. Quisque at urna eget ipsum pellentesque ullamcorper vel eu sapien. Aenean dapibus egestas vehicula. Sed neque erat, vulputate vel ex vehicula, accumsan molestie odio. Pellentesque euismod arcu et nulla mollis lacinia. Etiam eleifend ipsum eu velit venenatis, at tempus ligula ultricies. Integer sed purus eget ante fringilla venenatis. Donec vulputate porta mauris nec maximus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed vehicula consectetur posuere. Vestibulum pharetra mauris id consectetur accumsan. Proin sem orci, iaculis at blandit commodo, scelerisque sed ex.</p>
-
-      <p>Etiam sed dui dolor. Mauris ligula metus, gravida nec rhoncus dignissim, fringilla non felis. Pellentesque rutrum, neque id sagittis pellentesque, nisl nisl iaculis justo, et rutrum quam lorem in felis. Nunc ultricies massa vel lorem condimentum sollicitudin. Suspendisse id scelerisque mauris. Nunc vehicula, neque id imperdiet posuere, est sem gravida lectus, at laoreet sem leo quis dui. Aliquam convallis fringilla volutpat. Suspendisse vitae metus lorem. Aenean imperdiet ut dui eget ullamcorper. Aliquam non mollis enim. Praesent diam erat, bibendum ac lectus in, mattis pellentesque dui. Mauris ornare nunc bibendum sem gravida vehicula. Etiam efficitur tempus sem at molestie. Quisque nisi quam, imperdiet non fermentum eu, suscipit nec turpis. Nam scelerisque ultrices neque, non vulputate felis feugiat luctus.</p>
-
-      <p>Fusce finibus viverra nunc eu euismod. Morbi metus dui, congue nec erat eget, tempor condimentum erat. Fusce vitae tellus ac orci pretium tempor. Phasellus aliquet tempus lacus, pharetra euismod enim faucibus at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla erat quam, sollicitudin quis urna id, tristique lacinia lacus. In hac habitasse platea dictumst. Vestibulum gravida magna in nibh scelerisque feugiat. Vivamus pretium lacus vel dolor scelerisque tincidunt.</p>
-
-      <p>Curabitur a congue augue, sed pulvinar lectus. Pellentesque dapibus sem sit amet mattis suscipit. Sed ullamcorper, ante pretium tincidunt maximus, erat nunc ullamcorper ex, eget rutrum arcu magna sit amet augue. Nullam a tellus sit amet eros cursus viverra. Phasellus justo massa, aliquet sed lectus iaculis, semper gravida libero. Quisque placerat nulla in aliquet vehicula. Donec dictum tristique ipsum. Curabitur consequat, dolor vel interdum egestas, augue nisl convallis libero, id elementum dolor metus vitae massa. Nam sit amet tellus sit amet augue scelerisque iaculis vel eu magna. Nulla scelerisque arcu sit amet interdum euismod. Nam consectetur ullamcorper risus in ultrices. Maecenas pellentesque aliquet sem non vestibulum. Integer ultricies dolor eu sem ultrices luctus. Morbi ultricies augue sit amet leo viverra, ac bibendum nulla hendrerit. Donec ex magna, commodo a massa sed, consectetur fringilla purus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+      <p>Content.</p>
+      <p>More content.</p>
     </div>
   </main>
 

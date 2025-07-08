@@ -21,7 +21,11 @@
     <meta property="twitter:image" content="https://tthallium.github.io/static/potm2409a.jpg">
     
     <link rel="canonical" href="https://tthallium.github.io/">
-    
+
+    <link rel="preload" as="image" href="heic1916a.jpg">
+    <link rel="preload" as="image" href="heic2305a.jpg">
+    <link rel="preload" as="image" href="jwst_poster01.jpg">
+    <link rel="preload" as="image" href="Plato_key_visual (1).jpg">
     <link rel="preload" as="image" href="static/potm2409a.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -147,6 +151,11 @@
     <!-- Gradient -->
     <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0b0b0b] z-10"></div>
 
+    <!-- Photo Credit -->
+    <div id="photo-credit" class="photo-credit absolute bottom-4 right-4 z-30 text-white text-xs opacity-70 bg-black bg-opacity-50 px-2 py-1 rounded backdrop-blur-sm">
+      <a href="https://esawebb.org/images/potm2409b/" class="hover:text-indigo-300 transition-colors">ESA/Webb, NASA & CSA, M. Zamani (ESA/Webb), M. G. Guarcello (INAF-OAPA) and the EWOCS team</a>
+    </div>
+
     <!-- Header (logo + menu) -->
     <header class="absolute top-0 left-0 right-0 flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 md:px-[16.66vw] py-4 md:py-8 z-20 gap-4 hero-header">
       
@@ -180,14 +189,14 @@
     <!-- Blog Posts Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
       
-      <!-- Blog Post 1 -->
-      <a href="/blog-post-1/" class="block">
+      <!-- Blog Post 4 -->
+      <a href="/blog/jwst/" class="block">
         <article class="blog-card group cursor-pointer">
           <div class="blog-card-bg rounded-xl overflow-hidden shadow-2xl">
             <div class="relative overflow-hidden">
               <img 
-                src="../static/potm2409a.jpg" 
-                alt="Exoplanet Discovery" 
+                src="../static/jwst_poster01.jpg" 
+                alt="James Webb Space Telescope" 
                 class="blog-image w-full h-48 sm:h-56 object-cover"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -195,6 +204,9 @@
                 <span class="blog-tag text-xs font-semibold px-3 py-1 rounded-full text-indigo-300">
                   Astrophysics
                 </span>
+              </div>
+              <div class="absolute bottom-2 right-2 text-xs text-white bg-black/50 px-2 py-1 rounded">
+                ESA (C. Carreau)
               </div>
             </div>
             
@@ -224,14 +236,14 @@
         </article>
       </a>
 
-      <!-- Blog Post 2 -->
-      <a href="/blog-post-2/" class="block">
+      <!-- Blog Post 3 -->
+      <a href="/blog/exoplanet-detection/" class="block">
         <article class="blog-card group cursor-pointer">
           <div class="blog-card-bg rounded-xl overflow-hidden shadow-2xl">
             <div class="relative overflow-hidden">
               <img 
-                src="../static/potm2409a.jpg" 
-                alt="Mathematical Beauty" 
+                src="../static/Plato_key_visual (1).jpg" 
+                alt="Exoplanet detection techniques" 
                 class="blog-image w-full h-48 sm:h-56 object-cover"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -240,13 +252,16 @@
                   Exoplanets
                 </span>
               </div>
+              <div class="absolute bottom-2 right-2 text-xs text-white bg-black/50 px-2 py-1 rounded">
+                ESA
+              </div>
             </div>
             
             <div class="p-6">
               <div class="flex items-center gap-4 text-gray-400 text-sm mb-3">
-                <time datetime="2024-12-10">December 10, 2024</time>
+                <time datetime="2024-12-10">Month dd, yyyy</time>
                 <span>•</span>
-                <span>12 min read</span>
+                <span>n min read</span>
               </div>
               
               <h3 class="text-xl font-bold mb-3 text-white group-hover:text-indigo-300 transition-colors duration-300">
@@ -268,33 +283,36 @@
         </article>
       </a>
 
-      <!-- Blog Post 3 -->
-      <a href="/blog-post-3/" class="block">
+      <!-- Blog Post 2 -->
+      <a href="/blog/planetary-system-formation/" class="block">
         <article class="blog-card group cursor-pointer">
           <div class="blog-card-bg rounded-xl overflow-hidden shadow-2xl">
             <div class="relative overflow-hidden">
               <img 
-                src="../static/potm2409a.jpg" 
-                alt="Research Journey" 
+                src="../static/heic2305a.jpg" 
+                alt="Planetary system formation" 
                 class="blog-image w-full h-48 sm:h-56 object-cover"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute top-4 left-4">
                 <span class="blog-tag text-xs font-semibold px-3 py-1 rounded-full text-indigo-300">
-                  Research
+                  Planetary Systems
                 </span>
+              </div>
+              <div class="absolute bottom-2 right-2 text-xs text-white bg-black/50 px-2 py-1 rounded">
+                NASA. ESA, L. Hustak (STScI)
               </div>
             </div>
             
             <div class="p-6">
               <div class="flex items-center gap-4 text-gray-400 text-sm mb-3">
-                <time datetime="2024-12-05">December 5, 2024</time>
+                <time datetime="2024-12-05">Month dd, yyyy</time>
                 <span>•</span>
-                <span>6 min read</span>
+                <span>n min read</span>
               </div>
               
               <h3 class="text-xl font-bold mb-3 text-white group-hover:text-indigo-300 transition-colors duration-300">
-                Ran out of ideas here a bit
+                The Story of How Planetary Systems Come into Existence
               </h3>
               
               <p class="text-gray-300 mb-4 leading-relaxed">
@@ -312,13 +330,13 @@
         </article>
       </a>
 
-      <!-- Blog Post 4 -->
-      <a href="/blog-post-4/" class="block">
+      <!-- Blog Post 1 -->
+      <a href="/blog/history-of-exoplanets/" class="block">
         <article class="blog-card group cursor-pointer">
           <div class="blog-card-bg rounded-xl overflow-hidden shadow-2xl">
             <div class="relative overflow-hidden">
               <img 
-                src="../static/potm2409a.jpg" 
+                src="../static/heic1916a.jpg" 
                 alt="Physics Concepts" 
                 class="blog-image w-full h-48 sm:h-56 object-cover"
               />
@@ -328,13 +346,17 @@
                   Exoplanets
                 </span>
               </div>
+
+              <div class="absolute bottom-2 right-2 text-xs text-white bg-black/50 px-2 py-1 rounded">
+                ESA/Hubble, M. Kornmesser
+              </div>
             </div>
             
             <div class="p-6">
               <div class="flex items-center gap-4 text-gray-400 text-sm mb-3">
-                <time datetime="2024-11-28">November 28, 2024</time>
+                <time datetime="2024-11-28">Month dd, yyyy</time>
                 <span>•</span>
-                <span>10 min read</span>
+                <span>n min read</span>
               </div>
               
               <h3 class="text-xl font-bold mb-3 text-white group-hover:text-indigo-300 transition-colors duration-300">
