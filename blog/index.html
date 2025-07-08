@@ -54,6 +54,18 @@
         }
         to {
           opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      @keyframes scaleUp {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
         }
       }
       
@@ -75,6 +87,52 @@
       
       .hero-subtitle {
         animation: fadeInUp 1s ease-out 0.7s both;
+      }
+      
+      .blog-card {
+        animation: fadeInUp 0.8s ease-out both;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .blog-card:nth-child(1) { animation-delay: 0.1s; }
+      .blog-card:nth-child(2) { animation-delay: 0.2s; }
+      .blog-card:nth-child(3) { animation-delay: 0.3s; }
+      .blog-card:nth-child(4) { animation-delay: 0.4s; }
+      
+      .blog-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 30px rgba(99, 102, 241, 0.2);
+      }
+      
+      .blog-card:hover .blog-image {
+        transform: scale(1.05);
+      }
+      
+      .blog-image {
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .blog-tag {
+        background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(99, 102, 241, 0.1));
+        border: 1px solid rgba(99, 102, 241, 0.3);
+        backdrop-filter: blur(4px);
+      }
+      
+      .blog-card-bg {
+        background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9));
+        border: 1px solid rgba(99, 102, 241, 0.1);
+        backdrop-filter: blur(8px);
+      }
+      
+      .read-more-btn {
+        background: linear-gradient(135deg, #6366f1, #4f46e5);
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .read-more-btn:hover {
+        background: linear-gradient(135deg, #4f46e5, #3730a3);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
       }
     </style>
   </head>
@@ -118,9 +176,193 @@
     </div>
   </div>
 
-  <main class="flex-grow max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12 text-sm sm:text-base leading-relaxed text-justify">
-    <div class="space-y-4 sm:space-y-6">
-      Trust me guys im working on this
+  <main class="flex-grow max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+    <!-- Blog Posts Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+      
+      <!-- Blog Post 1 -->
+      <a href="/blog-post-1/" class="block">
+        <article class="blog-card group cursor-pointer">
+          <div class="blog-card-bg rounded-xl overflow-hidden shadow-2xl">
+            <div class="relative overflow-hidden">
+              <img 
+                src="../static/potm2409a.jpg" 
+                alt="Exoplanet Discovery" 
+                class="blog-image w-full h-48 sm:h-56 object-cover"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute top-4 left-4">
+                <span class="blog-tag text-xs font-semibold px-3 py-1 rounded-full text-indigo-300">
+                  Astrophysics
+                </span>
+              </div>
+            </div>
+            
+            <div class="p-6">
+              <div class="flex items-center gap-4 text-gray-400 text-sm mb-3">
+                <time datetime="2025-7-8">July 8, 2025</time>
+                <span>•</span>
+                <span>8 min read</span>
+              </div>
+              
+              <h3 class="text-xl font-bold mb-3 text-white group-hover:text-indigo-300 transition-colors duration-300">
+                James Webb Space Telescope: Window to the Past
+              </h3>
+              
+              <p class="text-gray-300 mb-4 leading-relaxed">
+                nojo proste nejaky text nevim ted
+              </p>
+              
+              <div class="read-more-btn text-white font-semibold px-4 py-2 rounded-lg text-sm inline-flex items-center gap-2">
+                Read More
+                <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </article>
+      </a>
+
+      <!-- Blog Post 2 -->
+      <a href="/blog-post-2/" class="block">
+        <article class="blog-card group cursor-pointer">
+          <div class="blog-card-bg rounded-xl overflow-hidden shadow-2xl">
+            <div class="relative overflow-hidden">
+              <img 
+                src="../static/potm2409a.jpg" 
+                alt="Mathematical Beauty" 
+                class="blog-image w-full h-48 sm:h-56 object-cover"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute top-4 left-4">
+                <span class="blog-tag text-xs font-semibold px-3 py-1 rounded-full text-indigo-300">
+                  Exoplanets
+                </span>
+              </div>
+            </div>
+            
+            <div class="p-6">
+              <div class="flex items-center gap-4 text-gray-400 text-sm mb-3">
+                <time datetime="2024-12-10">December 10, 2024</time>
+                <span>•</span>
+                <span>12 min read</span>
+              </div>
+              
+              <h3 class="text-xl font-bold mb-3 text-white group-hover:text-indigo-300 transition-colors duration-300">
+                To See the Invisible: How to Detect an Exoplanet?
+              </h3>
+              
+              <p class="text-gray-300 mb-4 leading-relaxed">
+                blabalblabla come read this
+              </p>
+              
+              <div class="read-more-btn text-white font-semibold px-4 py-2 rounded-lg text-sm inline-flex items-center gap-2">
+                Read More
+                <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </article>
+      </a>
+
+      <!-- Blog Post 3 -->
+      <a href="/blog-post-3/" class="block">
+        <article class="blog-card group cursor-pointer">
+          <div class="blog-card-bg rounded-xl overflow-hidden shadow-2xl">
+            <div class="relative overflow-hidden">
+              <img 
+                src="../static/potm2409a.jpg" 
+                alt="Research Journey" 
+                class="blog-image w-full h-48 sm:h-56 object-cover"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute top-4 left-4">
+                <span class="blog-tag text-xs font-semibold px-3 py-1 rounded-full text-indigo-300">
+                  Research
+                </span>
+              </div>
+            </div>
+            
+            <div class="p-6">
+              <div class="flex items-center gap-4 text-gray-400 text-sm mb-3">
+                <time datetime="2024-12-05">December 5, 2024</time>
+                <span>•</span>
+                <span>6 min read</span>
+              </div>
+              
+              <h3 class="text-xl font-bold mb-3 text-white group-hover:text-indigo-300 transition-colors duration-300">
+                Ran out of ideas here a bit
+              </h3>
+              
+              <p class="text-gray-300 mb-4 leading-relaxed">
+                yeah man
+              </p>
+              
+              <div class="read-more-btn text-white font-semibold px-4 py-2 rounded-lg text-sm inline-flex items-center gap-2">
+                Read More
+                <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </article>
+      </a>
+
+      <!-- Blog Post 4 -->
+      <a href="/blog-post-4/" class="block">
+        <article class="blog-card group cursor-pointer">
+          <div class="blog-card-bg rounded-xl overflow-hidden shadow-2xl">
+            <div class="relative overflow-hidden">
+              <img 
+                src="../static/potm2409a.jpg" 
+                alt="Physics Concepts" 
+                class="blog-image w-full h-48 sm:h-56 object-cover"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute top-4 left-4">
+                <span class="blog-tag text-xs font-semibold px-3 py-1 rounded-full text-indigo-300">
+                  Exoplanets
+                </span>
+              </div>
+            </div>
+            
+            <div class="p-6">
+              <div class="flex items-center gap-4 text-gray-400 text-sm mb-3">
+                <time datetime="2024-11-28">November 28, 2024</time>
+                <span>•</span>
+                <span>10 min read</span>
+              </div>
+              
+              <h3 class="text-xl font-bold mb-3 text-white group-hover:text-indigo-300 transition-colors duration-300">
+                Are we alone? - Brief History of Exoplanetary Research
+              </h3>
+              
+              <p class="text-gray-300 mb-4 leading-relaxed">
+                yeah yeah we get it uhshnsdhs
+              </p>
+              
+              <div class="read-more-btn text-white font-semibold px-4 py-2 rounded-lg text-sm inline-flex items-center gap-2">
+                Read More
+                <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </article>
+      </a>
+
+    </div>
+
+    <!-- Load More Button -->
+    <div class="text-center mt-12">
+      <button class="bg-gray-800 hover:bg-gray-700 text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl border border-gray-700 hover:border-indigo-500">
+        Load More Posts
+      </button>
     </div>
   </main>
 
