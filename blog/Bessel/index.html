@@ -32,6 +32,9 @@
     <link rel="icon" href="../../static/dove1_180.png" sizes="180x180" type="image/png" />
     
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript"
+      src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js">
+    </script>
     <style>
       body {
         font-family: 'Lexend Deca', sans-serif;
@@ -117,16 +120,34 @@
     <!-- Centered Name -->
     <div class="absolute inset-0 flex justify-center sm:justify-start items-center z-20 pointer-events-none px-4 sm:px-6 md:px-[16.66vw] pt-32 sm:pt-0">
       <div class="flex flex-col space-y-2 max-w-xl text-center sm:text-left hero-content">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-white select-none leading-tight hero-title">Post Title</h1>
-        <h2 class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-white select-none leading-relaxed hero-subtitle">Hook</h2>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-white select-none leading-tight hero-title">What Does Measuring Distances Tell Us About Hidden Worlds</h1>
+        <h2 class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-white select-none leading-relaxed hero-subtitle">Is our Sun unique? The story of how a measurement can challange our entire worldview and reveal hiddens worlds lightyears away.</h2>
       </div>
     </div>
   </div>
 
   <main class="flex-grow max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12 text-sm sm:text-base leading-relaxed text-justify">
     <div class="space-y-4 sm:space-y-6">
-      <p>Content.</p>
-      <p>More content.</p>
+      <p>The idea that the Sun is a star, just like the tiny specks we see in the night sky, originates, like many things, in Ancient Greece. The first mention comes from around 450 BC and is attributed to the Klazomenian philosopher Anaxagoras. But it would take a couple of millennia and the insights of figures such as Galileo and Newton (and many others) before the German scholar Friedrich Wilhelm Bessel would lay the foundation of a more solid proof.</p>
+
+      <img src="../../static/Friedrich.Wilhelm.Bessel.Ausschnitt.Daguerrotypie.png" alt="Friedrich Wilhelm Bessel" class="float-left w-32 sm:w-40 mr-4 mb-2"/>
+
+      <p>This astronomer, born in 1784, was the first to accurately measure how far nearby (we’re still talking lightyears) stars are. Try holding your thumb in front of your eyes. Now close one eye, then the other: your thumb appears to be moving! The angle by which it shifts (or more precisely, half of that angle) is called parallax. In astronomy, you compare the star you’re observing to the distant ones that don’t seem to move at all. Instead of closing one eye and then the second, astronomers take two measurements 6 months apart.</p>
+
+      <p>And here comes the part physicists love: since the distances are so vast and the angles so tiny, we can model the Earth, Sun, and the star as forming a right triangle, with the right angle at the Sun. In such a triangle, the tangent of the angle is defined as the ratio of the opposite side to the adjacent side, giving us: $\tan\left(p\right) = \frac{a}{d}$, where $a$ is the distance from the Sun to Earth and $d$ denotes how far is the star we are measuring.</p>
+
+      <img src="../../static/se4zHDiwnrQn5zHttUAAbK.jpg" alt="Picture illustrating parallax" class=""/>
+
+      <p>But we have more tricks up our sleeve. Just like we use meters on Earth, astronomers like to use a unit called the astronomical unit (au), defined as the average distance from the Earth to the Sun. That means $a=1$ au. Furthermore, since we’re dealing with minuscule angles, we can approximate $\tan (p)\approx p$ (If you don't believe me, try plotting $f(x)=\tan\left(x\right)$ and $f(x)=x$. You can see that for small values of x, the graphs look very similar.).  This simplifies our equation to $p=1/d$. In addition, you may have heard of parsec. That's the distance to an object whose parallax angle would be 1 arcsec, or in other words 1/129600 of a full turn.</p>
+
+      <p>Now how is this connected to exoplanets (the hidden worlds I keep hinting at)? Well, Bessel's calculations revealed that the universe is absolutely massive. Moreover, by measuring how far stars are and how bright they appear, we can calculate how luminous they actually are and how that compares to the Sun. Thanks to the work of Bessel and astronomers after him, one could presume that the Sun is not unique. And since the ancient Greeks already knew about planets (more or less), it is easy to hypothesise that every star could have some objects orbiting around it…</p>
+
+      <p class="text-sm text-gray-400 mt-6">
+        Sources: Friedrich Bessel and the Companion of Sirius. American Museum of Natural History [online]. 2000 [cit. 2025-07-12]. Available at: 
+      <a href="https://www.amnh.org/learn-teach/curriculum-collections/cosmic-horizons-book/friedrich-bessel-sirius-b" class="underline">https://www.amnh.org/learn-teach/curriculum-collections/cosmic-horizons-book/friedrich-bessel-sirius-b</a><br>
+        A history of astrometry - Part II Telescope ignites the race to measure stellar distances. ESA [online]. 2000 [cit. 2025-07-12]. Available at: 
+      <a href="https://sci.esa.int/web/gaia/-/53197-seeing-and-measuring-farther" class="underline">https://sci.esa.int/web/gaia/-/53197-seeing-and-measuring-farther</a>
+      </p>
     </div>
   </main>
 
