@@ -4,21 +4,37 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>Tobiáš Broža</title>
-<meta name="description" content="Physics student researching exoplanets in star clusters. Learn about my research, projects, and science communication." />
-<meta name="author" content="Tobiáš Broža" />
-<link rel="canonical" href="https://tobias.broza.matfyz.cz/" />
+<!--
+  ============================================================
+  POST TEMPLATE — copy this whole file into a new folder under
+  /blog/, e.g. /blog/my-new-post/index.html, then:
 
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://tobias.broza.matfyz.cz/" />
-<meta property="og:title" content="Tobiáš Broža" />
-<meta property="og:description" content="Physics student researching exoplanets in star clusters. Learn about my research, projects, and science communication." />
-<meta property="og:image" content="https://tobias.broza.matfyz.cz/static/og-image.jpg" />
+  1. Fill in the <title>, meta tags, and the CONTENT section below.
+  2. Add one entry for this post to /blog/posts-data.js so it
+     shows up on the blog listing page.
+  3. Write your text. For inline math use single dollar signs:
+       The result is $E = mc^2$.
+     For a centered equation on its own line, use double dollars:
+       $$\tan(p) = \frac{a}{d}$$
+     KaTeX renders both automatically — nothing else to do.
+  ============================================================
+-->
+
+<title>POST TITLE HERE - Tobiáš Broža</title>
+<meta name="description" content="ONE-LINE SUMMARY HERE" />
+<meta name="author" content="Tobiáš Broža" />
+<link rel="canonical" href="https://tobias.broza.matfyz.cz/blog/POST-SLUG/" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://tobias.broza.matfyz.cz/blog/POST-SLUG/" />
+<meta property="og:title" content="POST TITLE HERE" />
+<meta property="og:description" content="ONE-LINE SUMMARY HERE" />
+<meta property="og:image" content="https://tobias.broza.matfyz.cz/static/IMAGE.jpg" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Tobiáš Broža" />
-<meta name="twitter:description" content="Physics student researching exoplanets in star clusters." />
-<meta name="twitter:image" content="https://tobias.broza.matfyz.cz/static/og-image.jpg" />
+<meta name="twitter:title" content="POST TITLE HERE" />
+<meta name="twitter:description" content="ONE-LINE SUMMARY HERE" />
+<meta name="twitter:image" content="https://tobias.broza.matfyz.cz/static/IMAGE.jpg" />
 
 <meta name="theme-color" content="#FBF9F4" />
 
@@ -26,6 +42,17 @@
 <link rel="apple-touch-icon" href="/static/dove1_180.png" />
 
 <link rel="stylesheet" href="/src/style.css" />
+
+<!-- KaTeX: renders $...$ and $$...$$ math automatically. No build step needed. -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.css" integrity="sha384-vlBdW0r3AcZO/HboRPznQNowvexd3fY8qHOWkBi5q7KGgqJ+F48+DceybYmrVbmB" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.js" integrity="sha384-AtrdNsnxl/75rvBneBVH7DtOvCxSVahR2zWqle1coBKd8DEmLoviqNeJSx64gNAs" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '$', right: '$', display: false}
+    ]
+  });"></script>
 </head>
 <body>
 
@@ -41,11 +68,10 @@
   <header>
     <div class="wrap">
       <img src="/static/dove1_180.png" alt="Tobiáš Broža Logo" style="height: 48px; width: auto; cursor: pointer;" />
-
       <nav>
         <a href="/">Home</a>
-        <a href="/research/" class="current">Research</a>
-        <a href="/blog/">Blog</a>
+        <a href="/research/">Research</a>
+        <a href="/blog/" class="current">Blog</a>
         <a href="/about/">About</a>
       </nav>
     </div>
@@ -53,8 +79,45 @@
 
   <main>
     <div class="wrap">
-      <h1>Research</h1>
-      <p>Me and Dr. Ernst Paunzen are currently trying to publish our research on exoplanets in star clusters. Using available exoplanets catalogues we were able to match most of their host stars to objects observed by the Gaia sattelite. We used this information to connect them to star cluster catalogue (Hunt &amp; Reffert 2023). Hopefully, the paper will be out soon, so stay tuned!</p>
+      <a class="back-link" href="/blog/">← All posts</a>
+
+      <div class="meta-row">
+        <span class="meta-tag">TAG</span>
+        <span>MONTH DAY, YEAR</span>
+        <span>·</span>
+        <span>N min read</span>
+      </div>
+
+      <h1>POST TITLE HERE</h1>
+      <p class="subtitle">ONE-LINE SUMMARY / DEK HERE</p>
+
+      <!-- Optional hero image. Delete this block if the post doesn't need one. -->
+      <figure class="article-hero">
+        <img src="/static/IMAGE.jpg" alt="DESCRIBE THE IMAGE" />
+        <p class="figure-credit">CREDIT HERE</p>
+      </figure>
+
+      <!-- ===================== CONTENT STARTS HERE ===================== -->
+
+      <p>Write your post here. Regular paragraphs work exactly like this one.</p>
+
+      <p>Inline math works with single dollar signs, like $\tan(p) = \frac{a}{d}$, right in the middle of a sentence.</p>
+
+      <p>$$f(x) = \int_{-\infty}^{\infty} \hat{f}(\xi)\, e^{2\pi i \xi x} \, d\xi$$</p>
+
+      <!-- Optional smaller figure inside the body -->
+      <figure class="article-figure small">
+        <img src="/static/IMAGE2.jpg" alt="DESCRIBE THE IMAGE" />
+        <figcaption>Caption goes here.</figcaption>
+      </figure>
+
+      <!-- ===================== CONTENT ENDS HERE ===================== -->
+
+      <!-- Optional sources list. Delete if not needed. -->
+      <p class="sources">
+        Sources: SOURCE NAME [online]. YEAR [cit. YYYY-MM-DD]. Available at:
+        <a href="URL">URL</a>
+      </p>
     </div>
   </main>
 
@@ -84,6 +147,8 @@
       <p class="copy" style="margin-top:20px;">© Tobiáš Broža 2026 · <a href="https://github.com/tthallium/tthallium.github.io" target="_blank" rel="noopener noreferrer">source</a></p>
     </div>
   </footer>
-  
-  </body>
-  </html>
+
+  <script src="/script.js"></script>
+
+</body>
+</html>
